@@ -40,7 +40,6 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="mobile-menu-btn">
@@ -60,7 +59,7 @@
             </div>
         </div>
         <div class="photo-frame" data-aos="fade-left" data-aos-delay="200">
-            <img src="https://raw.githubusercontent.com/FSiRU/Portfolio/main/IMG-20250722-WA0005 (2).jpg" alt="Fanuel SiRU">
+            <img src="https://raw.githubusercontent.com/FSiRU/Portfolio/main/IMG-20250722-WA0005%20(2).jpg" alt="Fanuel SiRU">
         </div>
     </section>
 
@@ -71,7 +70,7 @@
             <i class="fas fa-code stat-icon"></i>
         </div>
         <div class="stat-card glass-effect" data-aos="zoom-in" data-aos-delay="100">
-            <div class="stat-number" data-target="3+">0</div>
+            <div class="stat-number" data-target="3">0</div>
             <div>Years Experience</div>
             <i class="fas fa-calendar-alt stat-icon"></i>
         </div>
@@ -200,53 +199,17 @@
         </div>
     </section>
 
-    <section id="blog">
-        <h2 class="section-title" data-aos="fade-up"><span class="gradient-text">📝 Latest Articles</span></h2>
-        <div class="blog-grid">
-            <div class="blog-card glass-effect glow-on-hover" data-aos="fade-up" data-aos-delay="0">
-                <div class="blog-date"><i class="far fa-calendar-alt"></i> March 15, 2025</div>
-                <h3>Building Scalable APIs with Node.js</h3>
-                <p>Best practices and patterns for production-ready APIs that can handle millions of requests...</p>
-                <div class="blog-tags">
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">API Design</span>
-                </div>
-                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="blog-card glass-effect glow-on-hover" data-aos="fade-up" data-aos-delay="100">
-                <div class="blog-date"><i class="far fa-calendar-alt"></i> February 28, 2025</div>
-                <h3>Mastering Python Async Programming</h3>
-                <p>Deep dive into asyncio and concurrent operations for high-performance Python applications...</p>
-                <div class="blog-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Async/Await</span>
-                </div>
-                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="blog-card glass-effect glow-on-hover" data-aos="fade-up" data-aos-delay="200">
-                <div class="blog-date"><i class="far fa-calendar-alt"></i> January 10, 2025</div>
-                <h3>Modern PHP Development Practices</h3>
-                <p>Exploring PHP 8 features, design patterns, and best practices for modern web development...</p>
-                <div class="blog-tags">
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">Best Practices</span>
-                </div>
-                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
     <section id="contact">
         <h2 class="section-title" data-aos="fade-up"><span class="gradient-text">📬 Let's Connect</span></h2>
         <div class="contact-wrapper">
             <div class="contact-card glass-effect" data-aos="fade-right">
-                <div class="contact-item"><i class="fas fa-envelope"></i> siruonyango77gmail.com</div>
-                <div class="contact-item"><i class="fas fa-phone"></i> +254 746 532087 </div>
+                <div class="contact-item"><i class="fas fa-envelope"></i> siruonyango77@gmail.com</div>
+                <div class="contact-item"><i class="fas fa-phone"></i> +254 746 532087</div>
                 <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya / Remote</div>
                 <p>Open to collaboration on interesting projects. Always happy to connect with fellow developers. Let's build something awesome together!</p>
                 <div class="social-links">
-                    <a href="https://github.com/FSiRU" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/fanuel-siru-77397b2a4/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/FSiRU" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/fanuel-siru-77397b2a4/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-dev"></i></a>
                 </div>
@@ -434,11 +397,9 @@
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Update active button
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
-            // Filter projects
             const filter = btn.getAttribute('data-filter');
             projectCards.forEach(card => {
                 if (filter === 'all' || card.getAttribute('data-category') === filter) {
@@ -460,7 +421,6 @@
 
             statusDiv.innerHTML = '<div class="loading">Sending message <i class="fas fa-spinner fa-spin"></i></div>';
 
-            // Simulate form submission (replace with actual API endpoint)
             setTimeout(() => {
                 statusDiv.innerHTML = '<div class="success">✨ Message sent successfully! I\'ll respond within 24 hours.</div>';
                 contactForm.reset();

@@ -448,60 +448,6 @@ nav {
     margin-top: 0.25rem;
 }
 
-/* Blog Section */
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.blog-card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.05);
-    border-radius: 16px;
-    padding: 1.5rem;
-    transition: all 0.3s;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
-}
-
-.blog-date {
-    color: #60a5fa;
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-}
-
-.blog-card h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.blog-card p {
-    color: #94a3b8;
-    margin-bottom: 1rem;
-}
-
-.blog-tags {
-    margin: 1rem 0;
-}
-
-.read-more {
-    color: #60a5fa;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: gap 0.3s;
-}
-
-.read-more:hover {
-    gap: 0.8rem;
-}
-
 /* Tech Tags */
 .tech-tag {
     display: inline-block;
@@ -694,15 +640,13 @@ body.light-mode .stat-card,
 body.light-mode .skill-card,
 body.light-mode .project-card,
 body.light-mode .testimonial-card,
-body.light-mode .blog-card,
 body.light-mode .contact-card {
     background: rgba(0, 0, 0, 0.03);
     border-color: rgba(0, 0, 0, 0.1);
 }
 
 body.light-mode .hero-content p,
-body.light-mode .project-card p,
-body.light-mode .blog-card p {
+body.light-mode .project-card p {
     color: #4a4a4a;
 }
 
@@ -770,8 +714,7 @@ body.light-mode .loader {
         display: block;
     }
 
-    .testimonials-grid,
-    .blog-grid {
+    .testimonials-grid {
         grid-template-columns: 1fr;
     }
 
