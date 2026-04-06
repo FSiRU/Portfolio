@@ -523,6 +523,14 @@ nav {
     border-color: #3b82f6;
 }
 
+.error {
+    color: #ef4444;
+    text-align: center;
+    padding: 0.5rem;
+    background: rgba(239, 68, 68, 0.1);
+    border-radius: 8px;
+}
+
 .form-status {
     margin-bottom: 1rem;
 }
